@@ -80,7 +80,7 @@ def chatbotResponse():
 
 
 if __name__ == '__main__':
-    applicationlication.run(debug=True)
-    #applicationlication.run(host='0.0.0.0', port='5000', debug=True)
+    #applicationlication.run(debug=True)
+    applicationlication.run(host='0.0.0.0', port='5000', debug=True)
 
 
