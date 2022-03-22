@@ -1,0 +1,467 @@
+{"intents": [
+        {"tag": "Whats up",
+         "patterns": ["How are you", "Is anyone there?", "Hello Hi Hey ", "Good Morning Afternoon Evening Night","Good day", "Whats up"],
+         "responses": ["Hi there! This is GISiri Chatbot. How can I help you?","Hi there! This is GISiri Chatbot. How can I help you spatially?"]         
+        },
+        {"tag": "noresponse",
+         "patterns": ["bbbb", "jdbjcb", "elan musk","what is india", "what is world","11111111111","sefrgrgr","35464ythtt5g500000"],
+         "responses": ["Sorry i dont know","You must ask the right questions","I am learning"]         
+        },
+        {"tag": "goodbye",
+         "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
+         "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"]
+        },
+        {"tag": "age",
+         "patterns": ["how old", "how old is tim", "what is your age", "how old are you", "age?"],
+         "responses": ["I am 1 month old!", "1 month young!"]
+        },
+        {"tag": "name",
+         "patterns": ["what is your name", "what should I call you", "whats your name?"],
+         "responses": ["You can call GISiri bot.", "I'm GISiri bot!", "I'm GISbot aka GISiri ChatBot."]
+        }, 
+        {"tag": "GIS",
+         "patterns": ["What is fullform of GIS?", "What is GIS", "What does GIS do?"],
+         "responses": ["GIS stands for Geographic Information Systems.A geographic information system (GIS) is a system that creates, manages, analyzes, and maps all types of data.", "GIS stands for Geographic Information Systems.A geographic information system (GIS) is a system that creates, manages, analyzes, and maps all types of data. GIS connects data to a map"]
+        },
+        {"tag": "ArcGIS",
+         "patterns": ["What is ArcGIS?", "What is ArcGIS used for?"],
+         "responses": ["ArcGIS is a geographic information system (GIS).ArcGIS is a family of client software", "ArcGIS is a geographic information system (GIS).ArcGIS is a family of client software"]
+        },
+        {"tag": "Geocoding",
+         "patterns": ["What is geocoding", "what does geocoding do"],
+         "responses": ["It converts address into spatial data and associates the exact geographical coordinates for that address.Address geocoding, or simply geocoding, is the process of taking a text-based description of a location, such as an address or the name of a place, and returning geographic coordinates, frequently latitude/longitude pair, to identify a location on the Earth's surface.","It converts address into spatial data and associates the exact geographical coordinates for that address.Address geocoding, or simply geocoding, is the process of taking a text-based description of a location, such as an address or the name of a place, and returning geographic coordinates, frequently latitude/longitude pair, to identify a location on the Earth's surface."]
+        },
+        {"tag": "Reverse Geocoding",
+         "patterns": ["What is reverse geocoding", "what does reverse geocoding do"],
+         "responses": ["when a GPS coordinate is entered the street address is interpolated from a range assigned to the road segment in a reference dataset that the point is nearest to.Reverse geocoding is the process of converting a location as described by geographic coordinates to a human-readable address or place name. It is the opposite of forward geocoding, hence the term reverse.","when a GPS coordinate is entered the street address is interpolated from a range assigned to the road segment in a reference dataset that the point is nearest to.Reverse geocoding is the process of converting a location as described by geographic coordinates to a human-readable address or place name. It is the opposite of forward geocoding, hence the term reverse."]
+        },
+        {"tag": "Digitization",
+         "patterns": ["What is the digitizing process", "What is digitization"],
+         "responses": ["Digitizing in GIS is the process of converting geographic data either from a hardcopy or a scanned image into vector data by tracing the features.", "Digitization is the process of converting information into a digital format"]
+        },
+        {"tag": "Point Geometry",
+         "patterns": ["What is Point feature", "What is a point in GIS"],
+         "responses": ["A point feature is a GIS object that stores its geographic representation—an X and Y coordinate pair", "A PointGeometry object is a shape that has neither length nor area at a given scale and is a 0-dimensional object."]
+        },
+        {"tag": "Line Geometry",
+         "patterns": ["What is Line Geomtery?", "What is Line in GIS", "hours of operation"],
+         "responses": ["Lines are used to represent the shape and location of geographic objects, such as street centerlines and streams, too narrow to depict as areas. Lines are also used to represent features that have length but no area, such as contour lines and boundaries.", "A line is formed by connecting two data points. A computer reads this line as straight, and renders the line as a vector connecting two x-y coordinates."]
+        },
+        {"tag": "Polygon Geometry",
+         "patterns": ["what is Polygon Geometry", "What is Polygon in GIS"],
+         "responses": ["Polygons are used to represent areas such as the boundary of a city (on a large scale map), lake, or forest. ", "A polygon is defined as a figure with three or more sides, and lying on one plane."]
+        },
+        {"tag": "pixel",
+         "patterns": ["What is pixel?", "What pixel means?"],
+         "responses": ["A pixel is one of the small dots or squares that make up an image on a computer screen. The more pixels there are, the more the image looks real or accurate.","picture x element"]
+        },
+        {"tag": "TIFF",
+         "patterns": ["What is TIFF?", "Tag image File Format"],
+         "responses": ["Tag Image File Format, abbreviated TIFF or TIF, is a computer file format for storing raster graphics images", "TIFF file uses the file extension .tif or .tiff. TIFF is also known for its flexibility and has more features and capabilities than other image file formats."]
+        },
+        {"tag": "Raster Data",
+         "patterns": ["Raster Data", "Formats of Raster Data"],
+         "responses": ["A raster consists of a matrix of cells (or pixels) organized into rows and columns (or a grid) where each cell contains a value representing information, such as temperature.Examples of raster file formats are JPEG, PNG, JIF, MrSID","A raster consists of a matrix of cells (or pixels) organized into rows and columns (or a grid) where each cell contains a value representing information, such as temperature.Examples of raster file formats are JPEG, PNG, JIF, MrSID"]
+        },
+        {"tag": "Vector Data",
+         "patterns": ["Vector Data", "Format of Vector Data"],
+         "responses": ["Vectors are composed of discrete geometric locations (x, y values) known as vertices that define the shape of the spatial object. The organization of the vertices determines the type of vector that we are working with: point, line or polygon.Examples of vector file formats are SHP, GDB, GeoJSON,KML","Vectors are composed of discrete geometric locations (x, y values) known as vertices that define the shape of the spatial object. The organization of the vertices determines the type of vector that we are working with: point, line or polygon.Examples of vector file formats are SHP, GDB, GeoJSON,KML"]
+        },
+        {"tag": "sliver polygons",
+         "patterns": ["What are Sliver Polygons", "Sliver Polygons"],
+         "responses": ["Sliver Polygons are small areas which result from spatial overlays of different GIS layers. Typically, sliver polygons occur if slightly different digitalized areas are spatially intersected.", "Polygon slivers can occur during extraction when small, thin polygons are accidentally created through an overlap with existing features."]
+        },
+        {"tag": "KML",
+         "patterns": ["What is KML", "KML"],
+         "responses": ["Keyhole Markup Language is an XML notation for expressing geographic annotation and visualization within two-dimensional maps and three-dimensional Earth browsers.", "Keyhole Markup Language (KML) is an XML-based format for storing geographic data and associated content and is an official Open Geospatial Consortium (OGC) standard."]
+        },
+        {"tag": "GeoJSON",
+         "patterns": ["What is GeoJSON", "Is GeoJSON a JSON"],
+         "responses": ["GeoJSON is an open standard format designed for representing simple geographical features, along with their non-spatial attributes. It is based on the JSON format. The features include points, line strings, polygons, and multi-part collections of these types.", "GeoJSON is a text-based format written in JavaScript Object Notation (JSON) that is sometimes used for interchange of vector data, drawings."]
+        },    
+
+	{"tag": "pyshp",
+         "patterns": ["What is pyshp","how pyshp is used","pyshp"],
+         "responses": ["It is a python shapefile library specifically used to read and write shapefiles.Elaborate detail can be obtained <a href=\"https://pypi.org/project/pyshp/\" target=\"_blank\"><u>here</u></a>","It is a python shapefile library specifically used to read and write shapefiles.Elaborate detail can be obtained <a href=\"https://pypi.org/project/pyshp/\" target=\"_blank\"><u>here</u></a>"]
+        },
+	{"tag": "Fire risk",
+         "patterns": ["How can we validate a fire risk model using Monte carlo simulation","I am working on forest fire risk of emission where we used static variables of interest In GIS (slope , climate, vegetation, fire intensity) fire frequency is included in the model","How to use Monte Carlo simulation in ArcGIS or any software to validate the Model"],
+         "responses": ["The very basic idea of Monte Carlo simulation is to use a random number generator of a certain statistical model and with a specified set of parameters that belong to this model","The very basic idea of Monte Carlo simulation is to use a random number generator of a certain statistical model and with a specified set of parameters that belong to this model. As such, you need your variables either one by one or in combination and set their values and compute your output (can easily be done in MATLAB), then you export the output to your GIS software."]
+        },
+	{"tag": "time series",
+         "patterns": ["Which machine learning algorithm is suitable for remote sensing (time series) explanation","I want to work on satellite images on 16 days basis on a particular area then draw the difference among the pixel values and views those results on the time series explanation."],
+         "responses": ["Cellular automata algorithms are working with pixels natively. You just map pixels from your pictures into a lattice of given size. Each pixel represe to a channel where a time series occur. It is possible to measure the evolution of the whole regions.It would be advisable to use the complexity measures based on entropy as is described in our paper on prediction of ventricular & Torsades de Pointes arrhythmia. This paper is made as a methodology one. Can be applied in your field to.","Prediction of the evolution is based on applying of AI methods (SVM, logistic regression, batching, etc.)"]
+        },
+	{"tag": "LULC",
+         "patterns": ["Which bands are most suitable in Landsat 8 satellite image for land use land cover classification","Landsat 8 for LULC","land use land cover using landsat","lulc classification"],
+         "responses": ["Band 4, 5, 6 is the best three-band combination and band 1, 2, 5, 7 is the best four-band combination which achieved almost identical performance as using all bands for LULC classification","Landsat band 4,5,6 for three band and Landsat 1, 2, 5, 7 is the best four-band combination"]
+        },
+	{"tag": "NDVI and LST",
+         "patterns": ["How to get correlation and scatter diagram between NDVI and LST in ArcGIS","correlation diagram between NDVI and LST"],
+         "responses": ["You can do it by using ArcMap and excel.<br>1)Random point generation or fishnet for grid base point generation,<br>2)Extract values to points,<br>3)correlation analysis in ArcMap or Excel","Follow these steps using ArcGIS and Excel<br>1)Random point generation or fishnet for grid base point generation,<br>2)Extract values to points,<br>3)correlation analysis in ArcMap or Excel"]
+        },
+	{"tag": "coordinate systems",
+         "patterns": ["How does ArcGIS pro handle the different coordinate systems on the same map","Does ArcGIS is making all the needed conversions automatically to project all the features on the map correctly"],
+         "responses": ["One of the great convenience features of ArcGIS (both Pro and Desktop) is that they project-on-the-fly, meaning that they perform automatic real-time reprojection of your data.","Yes and no. One of the great convenience features of ArcGIS (both Pro and Desktop) is that they project-on-the-fly, meaning that they perform automatic real-time reprojection of your data. Once a projection is assigned to the dataframe (either by adding the first data layer or by manually setting a projection), any subsequent layer that is added is displayed in that projection. In that sense, the answer to your question is yes. There are a couple of important caveats because the real-time projection is not perfect. In some cases, the layers won't line up exactly on the screen. I think this usually happens when the layers are not just in a different projection, but also have a different datum. You will usually only notice this if the two layers have common features, and you zoom in very close (the error will typically be sub-meter). Because of these minor discrepancies, there are a few best practices:1) Never edit a layer that is in a different projection than the dataframe (you should get a warning if you try to do this),2)Never use layers that are in different projections as clip features (or similar editing and geoprocessing tasks) for each other,3)Don't rely on spatial calculations (e.g. area) on layers that aren't in the current projection,4)By the same logic as #3, ArcGIS will let you take measurements and do calculations on unprojected data (GCS coordinate system), but these will almost always have substantial errors. This is true even if the dataframe is set to a GCS coordinate system as the projection"]
+        },
+	{"tag": "API RP 581",
+         "patterns": ["What is API RP 581","API RP 581"],
+         "responses": ["It is a risk based inspection and it is measured quantitatively based on pipeline history and condition","It is a risk based inspection and it is measured quantitatively based on pipeline history and condition.It will help the pipe line operators to predict the pipeline condition And helping them in predicting risk based on (Risk of failure = Probability of failure * consequence of failure). Probability of failures may happen with any of the following.1)Incorrect operation,2)External corrosion,3)Internal corrosion,4)Threat,5)Pipe defects like crack, dent etc. Based on history, pipeline operators will give the ranking to the failing causes and assess the pipeline condition and mitigation plans will be prepared based on several inputs."]
+        },
+	{"tag": "transform gis data",
+         "patterns": ["Python libraries to transform GIS data without using ArcMap software","python libraries to transform GIS data"],
+         "responses": ["Fiona and GeoPandas", "Fiona and GeoPandas are used for reading GDB files, Shapefiles, layers, GeoJsons,also perform tasks such as coordinates transformation, changing projections, adding Geodetic Coordinate system, conversion of files from 1 GIS format to another."]
+        },
+	{"tag": "python GIS",
+         "patterns": ["Different Python libraries used for gis tasks","python libraries for GIS"],
+         "responses": ["ArcPy, Geopandas, GDAL/OGR, RSGISLib, PyProj","ArcPy, Geopandas, GDAL/OGR, RSGISLib, PyProj"]
+        },
+	{"tag": "datascience libraries",
+         "patterns": ["Python libraries required for basic datascience activities","datascience libraries"],
+         "responses": ["NumPy, Pandas, Matplotlib, Scikit, Re, ReportLab, ipyleaflet, Folium, Geemap, LiDAR these are mainly used for datascience","NumPy, Pandas, Matplotlib, Scikit, Re, ReportLab, ipyleaflet, Folium, Geemap, LiDAR."]
+        },
+	{"tag": "geometry column",
+         "patterns": ["How can we get X, Y, Z and M values from geometry column of a feature class into separate individual columns"],
+         "responses": ["It can be done using ‘Feature Vertices to Points’ tool in Data Management Toolbox present in ArcMap",". Steps given in the following URL can be performed to achieve the task: https://support.esri.com/en/technical-article/000011691"]
+        },     
+
+        {"tag": "Join", 
+                 "patterns": ["What are in-memory joins", "Is it possible to publish a joined layer to ArcGIS Online", "Spatial Join", "in-memory"],
+                 "responses": ["It is not possible to publish a joined layer to ArcGIS Online/ Portal for ArcGIS as it is not a permanent layer. After the joined layer is exported as a feature class in ArcGIS Pro/ ArcMap then it can be published successfully.<br><a href=\"https://pro.arcgis.com/en/pro-app/latest/help/sharing/analyzer-error-messages/00226-in-memory-joins-and-relates-are-not-supported.htm\" target=\"_blank\"><u>Read more</u></a>","Export your layer with the join to a new feature class and use this new feature class in the map or remove the joins from your layer.<br><a href=\"https://pro.arcgis.com/en/pro-app/latest/help/sharing/analyzer-error-messages/00226-in-memory-joins-and-relates-are-not-supported.htm\" target=\"_blank\"><u>Read more</u></a>"]
+        },
+        {"tag": "SAML", 
+                 "patterns": ["Unable to login using Idp", "Unable to validate SAML response", "Unable to login into SAML error", "Unable to log into Portal for ArcGIS SAML error", "Enterprise logins are not working SAML"],
+                 "responses": ["This error means that the Service Provider (either Portal or ArcGIS Online) is unable to understand the SAML response given from the Identity Provider (ADFS, OKTA, Shibboleth, etc).<br><a href=\"https://doc.arcgis.com/en/arcgis-online/administer/configure-adfs.htm\" target=\"_blank\"><u>Read more</u></a>", "The error can be caused by the certificate that is being passed by the Idp, in the POST SAML response, does not match the certificate that is in the Edit Identity Provider settings within Portal/ArcGIS Online.<br><a href=\"https://doc.arcgis.com/en/arcgis-online/administer/configure-adfs.htm\" target=\"_blank\"><u>Read more</u></a>"]
+        },
+        {"tag": "Soft Reset", 
+                 "patterns": ["How to perform a soft ArcGIS Desktop reset", "What is a soft rest for ArcGIS Desktop", "Do customizations get removed when performing a soft reset", "Why are ESRI folders renamed", "Renaming ESRI Folders"],
+                 "responses": ["Issues related to application profile failure and applications crashing can occur in ArcGIS Desktop if the registry entry is corrupted. Performing a soft reset resolves the issue by closing applications and clearing data in the RAM, in contrast to a hard reset, where user data are removed, and the device is restored to its factory settings.<br><a href=\"https://support.esri.com/en/technical-article/000014992\" target=\"_blank\"><u>Read more</u></a>","Issues related to application profile failure and applications crashing can occur in ArcGIS Desktop if the registry entry is corrupted. Performing a soft reset resolves the issue by closing applications and clearing data in the RAM, in contrast to a hard reset, where user data are removed, and the device is restored to its factory settings.<br><a href=\"https://support.esri.com/en/technical-article/000014992\" target=\"_blank\"><u>Read more</u></a>"]
+        },
+        {"tag": "Customizations", 
+                 "patterns": ["Do customizations get removed when performing a soft reset", "How  to recover connections, styles and templates from an archived application data folder", "normal.mxt"],
+                 "responses": ["Renaming the Esri Application Data folder removes any custom styles, interface customizations, and connections that are stored within the user profile.<br>To recover ArcCatalog folder connections:<br>1.Browse to the old ArcCatalog folder and copy the ArcCatalog.gx file.<br>2.Browse to the new ArcCatalog folder and paste the ArcCatalog.gx file.<br>3.Click Yes to replace the file.<br>Recover custom symbols that were created in ArcMap:<br>1.Browse to the old ArcMap folder and copy the ‘.style’ files.<br>2.Browse to the new ArcMap folder and paste these files into it.<br><a href=\"https://support.esri.com/en/technical-article/000011442\" target=\"_blank\"><u>Read more</u></a>","Renaming the Esri Application Data folder removes any custom styles, interface customizations, and connections that are stored within the user profile.<br>To recover ArcCatalog folder connections:<br>1.Browse to the old ArcCatalog folder and copy the ArcCatalog.gxfile.<br>2.Browse to the new ArcCatalog folder and paste the ArcCatalog.gx file.<br>3.Click Yes to replace the file.<br>Recover custom symbols that were created in ArcMap:<br>1.Browse to the old ArcMap folder and copy the ‘.style’ files.<br>2.Browse to the new ArcMap folder and paste these files into it.<br><a href=\"https://support.esri.com/en/technical-article/000011442\" target=\"_blank\"><u>Read more</u></a>"]
+        },
+        
+        {"tag": "Tool Not Licensed", 
+                 "patterns": ["Your account is not licensed for ArcGIS Pro", "Not Licensed", "Which level of license do you need to used a specify tool"],
+                 "responses": ["The license for ArcGIS Pro is not configured or assigned to the account.<br><a href=\"https://support.esri.com/en/Technical-Article/000022232\" target=\"_blank\"><u>Solution</u></a>","The license for ArcGIS Pro is not configured or assigned to the account.<br><a href=\"https://support.esri.com/en/Technical-Article/000022232\" target=\"_blank\"><u>Solution</u></a>"]
+        },
+        {"tag": "Migrate to ArcGIS Pro", 
+                 "patterns": ["ArcGIS Pro terminologies", "Changes in ArcGIS Pro from ArcMap","Migrate to ArcGIS Pro"],
+                 "responses": ["There are several ArcMap users that are now switching to ArcGIS Pro. When migrating from ArcMap to ArcGIS Pro, there are many changes in terminology. Such as the Data View in ArcMap is called the Map View in ArcGIS Pro. Or, a Layer file (.lyrx) similar to .lyr file in ArcMap.<br><a href=\"https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/brochures/pdfs/arcgis-pro-terminology-guide.pdf\" target=\"_blank\"><u>ArcGIS Pro Terminology Guide</u></a>","There are several ArcMap users that are now switching to ArcGIS Pro. When migrating from ArcMap to ArcGIS Pro, there are many changes in terminology. Such as the Data View in ArcMap is called the Map View in ArcGIS Pro. Or, a Layer file (.lyrx) similar to .lyr file in ArcMap.<br><a href=\"https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/brochures/pdfs/arcgis-pro-terminology-guide.pdf\" target=\"_blank\"><u>ArcGIS Pro Terminology Guide</u></a>"]
+        },
+        {"tag": "Annotation", 
+                 "patterns": ["What is annotation?", "How is annotation better than labels", "Why should one use annotation over labels"],
+                 "responses": ["Annotation allows one with an option for creating and storing map text. An advantage of using annotation as map text over dynamic labels is that annotation can be selected and moved, and its properties can be managed as individual elements. One can create annotations individually and also convert labels to annotation.<br><a href=\"https://pro.arcgis.com/en/pro-app/latest/help/data/annotation/annotation.htm\" target=\"_blank\"><u>Read more</u></a>","Annotation allows one with an option for creating and storing map text. An advantage of using annotation as map text over dynamic labels is that annotation can be selected and moved, and its properties can be managed as individual elements. One can create annotations individually and also convert labels to annotation.<br><a href=\"https://pro.arcgis.com/en/pro-app/latest/help/data/annotation/annotation.htm\" target=\"_blank\"><u>Read more</u></a>"]
+        },
+        {"tag": "Geodatabase Annotation", 
+                 "patterns": ["What is geodatabase annotation","What is geodatabase annotation"],
+                 "responses": ["Geodatabase annotation is stored outside the map document as a geodatabase feature class just like geographic features.<br>Geodatabase annotation can be added to a map as a layer in the table of contents. One can turn it on and off like any other layer.<br>Geodatabase annotation properties are stored as attributes in an attribute table. The text as well as the annotation attributes such as various values, including symbology, font, and size can be stored.<br><a href=\"https://support.esri.com/en/technical-article/000005951\" target=\"_blank\"><u>Related Information</u></a>","Geodatabase annotation is stored outside the map document as a geodatabase feature class just like geographic features.<br>Geodatabase annotation can be added to a map as a layer in the table of contents. One can turn it on and off like any other layer.<br>Geodatabase annotation properties are stored as attributes in an attribute table. The text as well as the annotation attributes such as various values, including symbology, font, and size can be stored.<br><a href=\"https://support.esri.com/en/technical-article/000005951\" target=\"_blank\"><u>Related Information</u></a>"]
+        },
+        {"tag": "Types of geodatabase annotation", 
+                 "patterns": ["Types of geodatabase annotation", "What are the types of geodatabase annotation"],
+                 "responses": ["There are two types of geodatabase annotation<br>1.Standard annotation<br>2.Feature-linked annotation<br><a href=\"https://desktop.arcgis.com/en/arcmap/latest/manage-data/annotations/what-is-annotation.htm#GUID-301B5724-D11B-4C02-973F-23F4CB6A20BE\" target=\"_blank\"><u>Read more</u></a>","There are two types of geodatabase annotation<br>1.Standard annotation<br>2.Feature-linked annotation<br><a href=\"https://desktop.arcgis.com/en/arcmap/latest/manage-data/annotations/what-is-annotation.htm#GUID-301B5724-D11B-4C02-973F-23F4CB6A20BE\" target=\"_blank\"><u>Read more</u></a>"]
+        },
+        {"tag": "object reference not set to an instance",
+                 "patterns": ["Getting below error message when trying to append data in ArcGIS Online object reference not set to an instance","Unable to perform append in ArcGIS Online"],
+                 "responses": ["Troubleshooting: 1. Check data for duplicate records<br> 2. Check field name length for the data<br> 3. Export layer and republish the data<br> 4. Run check geometry tool on ArcGIS Pro.<br> <b>Workaround:</b> Use the Append tool in ArcGIS Pro to append the data.<br><a href=\"https://community.esri.com/t5/arcgis-online-questions/quot-object-reference-not-set-to-an-instance-of-an/td-p/217736\" target=\"_blank\"><u>Read more</u></a>","Troubleshooting: 1. Check data for duplicate records<br> 2. Check field name length for the data<br> 3. Export layer and republish the data<br> 4. Run check geometry tool on ArcGIS Pro.<br> <b>Workaround:</b> Use the Append tool in ArcGIS Pro to append the data.<br><a href=\"https://community.esri.com/t5/arcgis-online-questions/quot-object-reference-not-set-to-an-instance-of-an/td-p/217736\" target=\"_blank\"><u>Read more</u></a>"]
+        },
+        {"tag": "Trying to publish a tool with a new parameter",
+                 "patterns": ["Error 00256","Getting Error '00256: Server version <value> tool <value> does not have new parameter' while trying to publish a tool", "Trying to publish a tool with a new parameter"],
+                 "responses": ["Update ArcGIS Server to the same version of ArcGIS Pro or later.If upgrading ArcGIS Server is not possible, you will need to remove the tool from your workflow and find alternative tools or functions to achieve your desired workflow.","Update ArcGIS Server to the same version of ArcGIS Pro or later.If upgrading ArcGIS Server is not possible, you will need to remove the tool from your workflow and find alternative tools or functions to achieve your desired workflow."]
+        },
+        {"tag": "How to add units to your field",
+                 "patterns": ["How to add units like sq.km, meters, km to your field in ArcMap?", "How to add units to your field in ArcMap"],
+                 "responses": ["If you are calculating into a text field, you can choose to add a units abbreviation to the calculation.<br> For instance, 47.5673 sq m is an example of the output of area calculated into a text field with the units abbreviation.<br> You would need to create a text field in the attribute table.","If you are calculating into a text field, you can choose to add a units abbreviation to the calculation.<br> For instance, 47.5673 sq m is an example of the output of area calculated into a text field with the units abbreviation.<br> You would need to create a text field in the attribute table."]
+        },
+        {"tag": "Shared update groups",
+                 "patterns": ["Unable to update items in a shared update group in ArcGIS Online", "Shared update groups in ArcGIS Online"],
+                 "responses": ["Groups that allow group members to update all items in the group are called shared update groups.<br>At this time, shared update groups are intended for updating item details and the contents of maps, apps, and scenes. Some updates are reserved for the item owner or administrator (such as moving, sharing, or deleting an item and changing ownership).<br> However, members of this group also have elevated privileges, such as the ability to edit the contents of hosted feature layers, alter editor tracking settings, enable or disable attachments, and alter the layer's schema.<br> Therefore, proceed with caution when adding members to this type of group.<br>Currently, most ArcGIS apps do not support updating items shared with a shared update group. To determine whether this capability is supported in a specific ArcGIS app, refer to its product documentation.<br><br>Only the owner (or administrator) of the item can perform the following actions on the item (not all actions apply to all item types): delete, share, move, change owner, change delete protection, publish, register an app, overwrite data in hosted feature layers, and manage tiles in hosted tile layers.","Groups that allow group members to update all items in the group are called shared update groups.<br>At this time, shared update groups are intended for updating item details and the contents of maps, apps, and scenes. Some updates are reserved for the item owner or administrator (such as moving, sharing, or deleting an item and changing ownership).<br> However, members of this group also have elevated privileges, such as the ability to edit the contents of hosted feature layers, alter editor tracking settings, enable or disable attachments, and alter the layer's schema.<br> Therefore, proceed with caution when adding members to this type of group.<br>Currently, most ArcGIS apps do not support updating items shared with a shared update group. To determine whether this capability is supported in a specific ArcGIS app, refer to its product documentation.<br><br>Only the owner (or administrator) of the item can perform the following actions on the item (not all actions apply to all item types): delete, share, move, change owner, change delete protection, publish, register an app, overwrite data in hosted feature layers, and manage tiles in hosted tile layers."]
+        },
+        {"tag": "change my organization URL",
+                 "patterns": ["Can I change my ArcGIS Online Organization name", "Unable to edit attribute tables"],
+                 "responses": ["If your organization is a verified organization, you can't change the organization name. Verified organizations that need to change their organization name must first have their verified status removed. If it is not a verified organization you can change the name of the organization from AGOL Organization settings.<br><a href=\"https://support.esri.com/en/technical-article/000012002#:~:text=Yes%2C%20it%20is%20possible%20by,in%20the%20Short%20name%20section.\" target=\"_blank\"><u>Read more</u></a>","If your organization is a verified organization, you can't change the organization name. Verified organizations that need to change their organization name must first have their verified status removed. If it is not a verified organization you can change the name of the organization from AGOL Organization settings.<br><a href=\"https://support.esri.com/en/technical-article/000012002#:~:text=Yes%2C%20it%20is%20possible%20by,in%20the%20Short%20name%20section.\" target=\"_blank\"><u>Read more</u></a>"]
+        },
+        {"tag": "Unable to edit attribute tables",
+                 "patterns": ["Unable to edit attribute tables in ArcGIS Online Map Viewer","Unable to edit attribute tables"],
+                 "responses": ["The following could be cause for the issue:<br> The member’s default role or custom role has insufficient privileges.<br>The editing capabilities of the hosted feature layer is not enabled.<br>The editing capabilities of the field in the attribute table is not enabled.<br>The layer is not published as a hosted feature layer.<br><a href=\"https://support.esri.com/en/technical-article/000024770\" target=\"_blank\"><u>Read more</u></a>","The following could be cause for the issue:<br> The member’s default role or custom role has insufficient privileges.<br>The editing capabilities of the hosted feature layer is not enabled.<br>The editing capabilities of the field in the attribute table is not enabled.<br>The layer is not published as a hosted feature layer.<br><a href=\"https://support.esri.com/en/technical-article/000024770\" target=\"_blank\"><u>Read more</u></a>"]
+        },
+        {"tag": "Field apps", 
+                 "patterns": ["How to capture android traffic using fiddler for monitoring ESRI field apps", "Capturing fiddler traffic with Field Maps", "Fiddler"],
+                 "responses": ["Open Fiddler and select Tools -> Options<br>Choose the Connections tab<br>Select the Allow remote computers to connect checkbox to enable the setting<br>Restart Fiddler in order the changes to take effect<br>Fiddler is now listening on port 8888 (this is the default port, you can change it from the setting above).<br>Once Fiddler is listening, we should use it as a proxy in Android.<br>Open the WiFi menu.<br>Tap and hold on your current network to show the network details<br>Choose the Manage network settings option<br>Check Show advanced options checkbox<br>Choose Manual from the Proxy dropdown list<br>Type your IP address in the Proxy host name field<br><b>NOTE:</b> You can check your IP address by hovering over the Network Connection icon in the Fiddler toolbar.<br>Type the Fiddler listening port (8888 by default) in the Proxy port field <br>Click Save to apply changes.<br><br><a href=\"https://www.telerik.com/blogs/how-to-capture-android-traffic-with-fiddler\" target=\"_blank\"><u>Read more</u></a>","Open Fiddler and select Tools -> Options<br>Choose the Connections tab<br>Select the Allow remote computers to connect checkbox to enable the setting<br>Restart Fiddler in order the changes to take effect<br>Fiddler is now listening on port 8888 (this is the default port, you can change it from the setting above).<br>Once Fiddler is listening, we should use it as a proxy in Android.<br>Open the WiFi menu.<br>Tap and hold on your current network to show the network details<br>Choose the Manage network settings option<br>Check Show advanced options checkbox<br>Choose Manual from the Proxy dropdown list<br>Type your IP address in the Proxy host name field<br><b>NOTE:</b> You can check your IP address by hovering over the Network Connection icon in the Fiddler toolbar.<br>Type the Fiddler listening port (8888 by default) in the Proxy port field <br>Click Save to apply changes.<br><br><a href=\"https://www.telerik.com/blogs/how-to-capture-android-traffic-with-fiddler\" target=\"_blank\"><u>Read more</u></a>"]
+        },
+        {"tag": "reserved words in esri geodatabase",
+                 "patterns": ["What are the reserved words for Esri's file geodatabase","reserved words for Esri file geodatabase","reserved words for file GDB"],
+                 "responses": ["Reserved words within a file geodatabase at version 10.1:<br>• ADD<br>• ALTER<br>• AND<br>• BETWEEN<br>• BY<br>• COLUMN<br>• CREATE<br>• DELETE<br>• DROP<br>• EXISTS<br>• FOR<br>• FROM<br>• GROUP<br>• IN<br>• INSERT<br>• INTO<br>• IS<br>• LIKE<br>• NOT<br>• NULL<br>• OR<br>• ORDER<br>• SELECT<br>• SET<br>• TABLE<br>• UPDATE<br>• VALUES<br>• WHERE<br><br><a href=\"https://support.esri.com/en/technical-article/000010906\" target=\"_blank\"><u>Read more</u></a>","Reserved words within a file geodatabase at version 10.1:<br>• ADD<br>• ALTER<br>• AND<br>• BETWEEN<br>• BY<br>• COLUMN<br>• CREATE<br>• DELETE<br>• DROP<br>• EXISTS<br>• FOR<br>• FROM<br>• GROUP<br>• IN<br>• INSERT<br>• INTO<br>• IS<br>• LIKE<br>• NOT<br>• NULL<br>• OR<br>• ORDER<br>• SELECT<br>• SET<br>• TABLE<br>• UPDATE<br>• VALUES<br>• WHERE<br><br><a href=\"https://support.esri.com/en/technical-article/000010906\" target=\"_blank\"><u>Read more</u></a>"]
+        },
+        
+        {"tag": "map viewer classic", 
+                 "patterns": ["Can I use Map Viewer Classic when editing a map configured with the Field Maps web app", "Using Map viewer Classic"],
+                 "responses": ["If you're using ArcGIS Online or ArcGIS Enterprise 10.9.1 or later to configure the map with the Field Maps web app, you can use either Map Viewer Classic or the new Map Viewer when editing the map.<br>If you're using ArcGIS Enterprise 10.8.1 or 10.9 to configure the map with the Field Maps web app, you must use Map Viewer Beta when editing the map. <br>If you use Map Viewer Classic to edit the map, the changes you make in the Field Maps web app will be lost.","If you're using ArcGIS Online or ArcGIS Enterprise 10.9.1 or later to configure the map with the Field Maps web app, you can use either Map Viewer Classic or the new Map Viewer when editing the map.<br>If you're using ArcGIS Enterprise 10.8.1 or 10.9 to configure the map with the Field Maps web app, you must use Map Viewer Beta when editing the map. <br>If you use Map Viewer Classic to edit the map, the changes you make in the Field Maps web app will be lost."]
+        },
+        {"tag": "forms and feature templates",
+                 "patterns": ["Will the forms and feature templates I configure in Field Maps override the symbology, pop-up configurations, and forms that were set up in Map Viewer Classic","Will the forms and feature templates I configure in Field Maps override the symbology, pop-up configurations, and forms that were set up in Map Viewer Classic"],
+                 "responses": ["If you create a form in the Field Maps web app, it overrides the editable pop-up configured in Map Viewer Classic. The Field Maps web app does not alter symbology or pop-ups.","If you create a form in the Field Maps web app, it overrides the editable pop-up configured in Map Viewer Classic. The Field Maps web app does not alter symbology or pop-ups."]
+        },
+        {"tag": "set up location tracking", 
+                 "patterns": ["How do I set up location tracking and authorize ArcGIS Field Maps", "set up location tracking and authorize ArcGIS Field Maps"],
+                 "responses": ["To use the location tracking capability in ArcGIS Field Maps, location tracking must be enabled for your organization.<br>To access the location tracking capability in Field Maps, you must purchase and assign an ArcGIS Tracker license to each ArcGIS account that will be tracked. This license is included in the Field Worker user type and is available as an add-on for all other user types (including the Viewer user type).<br><a href=\"https://doc.arcgis.com/en/arcgis-online/administer/configure-location-tracking.htm\" target=\"_blank\"><u>Read more</u></a>","To use the location tracking capability in ArcGIS Field Maps, location tracking must be enabled for your organization.<br>To access the location tracking capability in Field Maps, you must purchase and assign an ArcGIS Tracker license to each ArcGIS account that will be tracked. This license is included in the Field Worker user type and is available as an add-on for all other user types (including the Viewer user type).<br><a href=\"https://doc.arcgis.com/en/arcgis-online/administer/configure-location-tracking.htm\" target=\"_blank\"><u>Read more</u></a>"]
+        },
+        {"tag": "Customizing ArcGIS Dashboard",
+                 "patterns": ["Do ArcGIS dashboards have support for custom data visualizations and themes", "Customizing ArcGIS Dashboard"],
+                 "responses": ["Not exactly.The embedded content element can be used to insert visualizations and content not supported out of the box. Further, there are many theme properties that can be controlled via dashboard-level settings. With that said, the Dashboards team is currently gathering requirements around how customers might like to extend the out-of-the-box offering and will make decisions about this at a later date.<br><a href=\"https://doc.arcgis.com/en/dashboards/get-started/embedded-content.htm\" target=\"_blank\"><u>Read more</u></a>","Not exactly.The embedded content element can be used to insert visualizations and content not supported out of the box. Further, there are many theme properties that can be controlled via dashboard-level settings. With that said, the Dashboards team is currently gathering requirements around how customers might like to extend the out-of-the-box offering and will make decisions about this at a later date.<br><a href=\"https://doc.arcgis.com/en/dashboards/get-started/embedded-content.htm\" target=\"_blank\"><u>Read more</u></a>"]
+        },
+        {"tag": "supported browsers for ArcGIS Dashboard",
+                 "patterns": ["What are the supported browsers for ArcGIS Dashboard", "supported browsers for ArcGIS Dashboard"],
+                 "responses": ["Chrome, Firefox, Safari,Microsoft Edge","Chrome, Firefox, Safari,Microsoft Edge"]
+        },
+        {"tag": "Accessing data failed",
+                 "patterns": ["Getting below error while trying to access data 'Error: Accessing data failed'", "Unable to access data in ArcGIS Online"],
+                 "responses": ["To resolve the issue, use one of the following options:<br> 1. In ArcMap, create a local copy of the hosted feature layer, and edit the local copy to change the <Null> attribute values to blank spaces, or replace them with supported characters.<br> 2. In ArcGIS Online, navigate to the item details page of the hosted feature layer, and click the Settings tab. In the Feature Layer (hosted) section, under What features can editors see?, select the Editors can see all features option.<br>Refer to ArcGIS Online: Manage editor settings for more information.<br><a href=\"https://support.esri.com/en/technical-article/000016280\" target=\"_blank\"><u>Read more</u></a>","To resolve the issue, use one of the following options:<br> 1. In ArcMap, create a local copy of the hosted feature layer, and edit the local copy to change the <Null> attribute values to blank spaces, or replace them with supported characters.<br> 2. In ArcGIS Online, navigate to the item details page of the hosted feature layer, and click the Settings tab. In the Feature Layer (hosted) section, under What features can editors see?, select the Editors can see all features option.<br>Refer to ArcGIS Online: Manage editor settings for more information.<br><a href=\"https://support.esri.com/en/technical-article/000016280\" target=\"_blank\"><u>Read more</u></a>"]
+        },
+        
+        {"tag": "SQL SDE Privilege",
+        "patterns": ["Privileges required to create tables, feature class on a SQL server enterprise GDB", "Error: Insufficient privilege to create object"],
+        "responses": ["Right Click on the database from SQL Server management studio  Options  Permissions  Provide explicit permision Create Table, Create Fuction, Create Procedure, Create View.<br><a href=\"https://pro.arcgis.com/en/pro-app/latest/help/data/geodatabases/manage-sql-server/privileges-sqlserver.htm\" target=\"_blank\"><u>Read more</u></a>","Right Click on the database from SQL Server management studio  Options  Permissions  Provide explicit permision Create Table, Create Fuction, Create Procedure, Create View.<br><a href=\"https://pro.arcgis.com/en/pro-app/latest/help/data/geodatabases/manage-sql-server/privileges-sqlserver.htm\" target=\"_blank\"><u>Read more</u></a>"]
+        },
+		{
+			"tag": "web map in collector",
+			"patterns": ["Unable to view a web map in Collector for ArcGIS","Unable to view a web map in Collector for ArcGIS"],
+			"responses": ["This issue occurs due to one of the following causes:<br>The web map does not contain any editable feature services.<br>The feature service in the web map is published with grouped layers.The web map is configured as 'Exploratory' when published from ArcGIS Pro.The web map has not been enabled for use in Collector for ArcGIS.<br><a href=\"https://support.esri.com/en/technical-article/000019977\" target=\"_blank\"><u>Visit this page</u></a>", "This issue occurs due to one of the following causes:The web map does not contain any editable feature services. The feature service in the web map is published with grouped layers.The web map is configured as 'Exploratory' when published from ArcGIS Pro.The web map has not been enabled for use in Collector for ArcGIS. For more enquiry, <br><a href=\"https://support.esri.com/en/technical-article/000019977\" target=\"_blank\"><u>Visit this page</u></a>"]
+		},
+		{
+			"tag": "Download web map offline",
+			"patterns": ["Downloading a web map for offline use with Collector for ArcGIS iOS or Android","Downloading a web map for offline use with Collector for ArcGIS iOS or Android"],
+			"responses": ["There are two options to work around this limitation: <br>Disable the option to move edits to base:-Stop the feature service that references the data.Unregister the feature class as versioned.<br>Register the feature class as versioned again, this time unchecking the option to move edits to base.Start the feature service. <br>Detailed documentation on using versioned data with offline editing work flows is available: <br>Offline maps and versioned data. <br>Choose instead to use non-versioned data with archiving enabled: Prepare data for offline use. <br><a href=\"https://support.esri.com/en/technical-article/000012535\" target=\"_blank\"><u>Know more</u></a>","There are two options to work around this limitation: <br>Disable the option to move edits to base:-Stop the feature service that references the data.Unregister the feature class as versioned.<br>Register the feature class as versioned again, this time unchecking the option to move edits to base.Start the feature service. <br>Detailed documentation on using versioned data with offline editing work flows is available: <br>Offline maps and versioned data. <br>Choose instead to use non-versioned data with archiving enabled: Prepare data for offline use. <br><a href=\"https://support.esri.com/en/technical-article/000012535\" target=\"_blank\"><u>Know more</u></a>"]
+		},
+{
+			"tag": "Failed to publish",
+			"patterns": ["The containing process for 'System/PublishingToolsEx' job 'job_number' has crashed", "Unable to publish a large number of records."],
+			"responses": ["Publishing a large number of records causes the service to time out, as a large record service needs more time to be processed and published. This varies depending on the complexity of the services such as the number of layers or number of records. <br>To resolve this issue, increase the maxUsageTime  parameter to a higher value to allow the process to finish before the services time out from admin end point. <br><a href=\"https://support.esri.com/en/technical-article/000021579\" target=\"_blank\"><u>Read more</u></a>","Publishing a large number of records causes the service to time out, as a large record service needs more time to be processed and published. This varies depending on the complexity of the services such as the number of layers or number of records. <br>To resolve this issue, increase the maxUsageTime  parameter to a higher value to allow the process to finish before the services time out from admin end point. <br><a href=\"https://support.esri.com/en/technical-article/000021579\" target=\"_blank\"><u>Read more</u></a>"]
+		},
+		{
+			"tag": "Edit a feature layer",
+			"patterns": ["Unable to edit the geometry of a feature in an editable feature layer.","Unable to edit the geometry of a feature in an editable feature layer."],
+			"responses": ["If the editable feature layer contains m-values, you can't edit the geometry for existing features. To edit geometry for existing features in the layer, the layer owner must move the data with m-values to a separate layer (which can be in the same service).", "If the editable feature layer contains m-values, you can't edit the geometry for existing features. To edit geometry for existing features in the layer, the layer owner must move the data with m-values to a separate layer (which can be in the same service)."]
+		},
+{
+			"tag": "add portal URL in ArcMap",
+			"patterns": ["Can't see an option to publish to my organization's portal using ArcGIS Desktop", "How to Add Portal URL in ArcMap"],
+			"responses": ["1.Close all ArcGIS Desktop applications.<br> 2.Open ArcGIS Administrator from All Programs > ArcGIS >ArcGIS Administrator.<br>3.Click ArcGIS in the table of contents.<br> 4.Click Advanced.<br> 5.The Advanced Configuration dialog box appears.<br> 6.Click Manage Portal Conn", "1.Close all ArcGIS Desktop applications.<br> 2.Open ArcGIS Administrator from All Programs > ArcGIS > ArcGIS Administrator.<br> 3.Click ArcGIS in the table of contents.<br> 4.Click Advanced.<br> 5.The Advanced Configuration dialog box appears.<br> 6.Click Manage Portal Conn"]
+		},
+		{
+			"tag": "export a hosted feature class larger than 2GB",
+			"patterns": ["Exporting a hosted feature layer containing large attachments fails if the size of the exported file geodatabase exceeds 2 GB.","Exporting a hosted feature layer containing large attachments fails if the size of the exported file geodatabase exceeds 2 GB."],
+			"responses": ["Hey, I'm sorry to hear that.It's a Bug.BUG-000127663. I do not have a solution for it right now.<br>Please connect with our technical support team to get further assistance on it.", "Hey, I'm sorry to hear that.It's a Bug.BUG-000127663. I do not have a solution for it right now.<br>Please connect with our technical support team to get further assistance on it."]
+		},
+
+		{
+			"tag": "Open transaction in SQL Server",
+			"patterns": ["Why ArcMap is adding an open transaction in SQL Server"],
+			"responses": ["BUG-000117909- Displaying a feature class in ArcMap and opening the properties in Catalog, either ArcCatalog or the Catalog pane of a different ArcMap session, creates an open transaction in SQL Server", "BUG-000117909- Displaying a feature class in ArcMap and opening the properties in Catalog, either ArcCatalog or the Catalog pane of a different ArcMap session, creates an open transaction in SQL Server"]
+		},
+
+		{
+			"tag": "Reconcile-Post fails in PostGreSQL",
+			"patterns": ["Reconcile-post failing for a PostGIS Table", "Unable to reconcile post for a PostGIS Table"],
+			"responses": ["BUG-000127029 Reconcile/post using a geoprocessing tool fails to update an archive class of a PostGIS table.", "BUG-000127029 Reconcile/post using a geoprocessing tool fails to update an archive class of a PostGIS table."]
+		},
+		{
+			"tag": "Query widget in Web app Buider",
+			"patterns": ["Query widget in Web app Buider shows Values filtered by previous expressions lists all unique values", "filtered by previous expressions"],
+			"responses": ["BUG-000116089 The Web AppBuilder for ArcGIS Query widget filter expression is configured to only show 'Values filtered by previous expressions' lists all unique values instead of a filtered set when the previous expression is configured from the Group Filter widget", "BUG-000116089 The Web AppBuilder for ArcGIS Query widget filter expression is configured to only show 'Values filtered by previous expressions' lists all unique values instead of a filtered set when the previous expression is configured from the Group Filter widget"]
+		},
+		{
+			"tag": "Attribute Table widget filter",
+			"patterns": ["Selected features do not honor the Attribute Table widget filter", "Attribute table filter in WebApp Builder"],
+			"responses": ["BUG-000116557- The selected features do not honor the Attribute Table widget filter in Portal for ArcGIS 10.6.1 Web AppBuilder.", "BUG-000116557- The selected features do not honor the Attribute Table widget filter in Portal for ArcGIS 10.6.1 Web AppBuilder."]
+		},
+		{
+			"tag": "Select widget WebApp Builder",
+			"patterns": ["All layers are re-enabled after running the 'Create layer' within the Select widget", "Feature layer getting re-enabled"],
+			"responses": ["BUG-000119790- All layers in Portal for ArcGIS Web AppBuilder for ArcGIS are re-enabled after running the 'Create layer' within the Select widget", "BUG-000119790- All layers in Portal for ArcGIS Web AppBuilder for ArcGIS are re-enabled after running the 'Create layer' within the Select widget"]
+		},
+		{
+			"tag": "Editor tracking does not populate the tracking fields",
+			"patterns": ["Enabling Editor Tracking on a relationship class does not populate the tracking field", "Editor tracking does not populate the tracking fields"],
+			"responses": ["BUG-000129831-Enabling Editor Tracking on a relationship class does not populate the tracking fields when users edit in a named version of a branch-versioned feature service", "BUG-000129831-Enabling Editor Tracking on a relationship class does not populate the tracking fields when users edit in a named version of a branch-versioned feature service"]
+		},
+		{
+			"tag": "Transferring attachements from one sde to another gdb",
+			"patterns": ["Attachments are dropped when exporting a feature class from an enterprise geodatabase to a file geodatabase and vice versa", "export tool dropping attachments"],
+			"responses": ["1.Copy and paste the feature class with attachments to the desired geodatabase. To transfer a feature class with attachments from a enterprise geodatabase (EGDB) to a file geodatabase (FGDB), follow the instructions provided below:Create a new feature dataset in the target FGDB using the spatial reference of one of the feature classes of the original enterprise geodatabase.<br> 2. Copy the required feature classes and paste it to the newly created feature dataset in the FGDB. The attachments are successfully copied.", "1.Copy and paste the feature class with attachments to the desired geodatabase. To transfer a feature class with attachments from a enterprise geodatabase (EGDB) to a file geodatabase (FGDB), follow the instructions provided below:Create a new feature dataset in the target FGDB using the spatial reference of one of the feature classes of the original enterprise geodatabase.<br> 2. Copy the required feature classes and paste it to the newly created feature dataset in the FGDB. The attachments are successfully copied."]
+		},
+		{
+			"tag": "version of SDE required for Utility Network",
+			"patterns": ["The version of SDE required for Utility Network", "geodatabase version compatible with utility network"],
+			"responses": ["The geodatabase version must be 10.8.1.2.6 or later. For more enquiry, <br><a href=\"https://pro.arcgis.com/en/pro-app/latest/tool-reference/utility-networks/create-utility-network.htm\" target=\"_blank\"><u>Visit this page</u></a>", "The geodatabase version must be 10.8.1.2.6 or later. For more enquiry,<br><a href=\"https://pro.arcgis.com/en/pro-app/latest/tool-reference/utility-networks/create-utility-network.htm\" target=\"_blank\"><u>Visit this page</u></a>"]
+		},
+
+
+        {"tag": "ODMS export Process failed",
+         "patterns": ["ODMS export Process failed","ODMS export Process failed"],
+         "responses": ["Hey, I'm sorry to hear that. The problem you are facing might be specific to your work environment therefore I do not have a solution for it right now.<br>Please connect with our technical support team to get further assistance on it.","Hey I'm sorry to hear that. The problem you are facing might be specific to your work environment therefore I do not have a solution for it right now.<br>Please connect with our technical support team to get further assistance on it."]         
+        },
+        {
+				"tag": "Check License Type installed on my machine",
+				"patterns": ["Is there a way to check which license version (stand alone vs. concurrent) that I have installed from my end?", "How to check which license version is installed for ArcMap"],
+				"responses": ["1)Launch ArcGIS Administrator as an Administrator by right-clicking on the Application>More>Run as Administrator. <br>2)Check which license type is installed (standalone or concurrent use license)", "1)Launch ArcGIS Administrator as an Administrator by right-clicking on the Application>More>Run as Administrator. <br>2)Check which license type is installed (standalone or concurrent use license)"]
+			},
+
+
+			{
+				"tag": "Register database with ArcGIS Server",
+				"patterns": ["Failed to register database to ArcGIS Server", "Unable to register database to ArcGIS Server"],
+				"responses": ["When connect Database during registering with the ArcGIS Server, the instance should be the full name not Alias <br><a href=\"https://community.esri.com/t5/arcgis-enterprise-questions/failed-to-register-database-to-arcgis-server/m-p/478444\" target=\"_blank\"><u>Read more</u></a>", "When connect Database during registering with the ArcGIS Server, the instance should be the full name not Alias <br><a href=\"https://community.esri.com/t5/arcgis-enterprise-questions/failed-to-register-database-to-arcgis-server/m-p/478444\" target=\"_blank\"><u>Read more</u></a>"]
+			},
+
+
+			{
+				"tag": "Create Replica failed, DBMS table not found",
+				"patterns": ["Error: Create Replica failed. DBMS table not found. The workspace is not connected", "Unable to create replica"],
+				"responses": ["In ArcCatalog, right-click the desired feature class in the database connection > Properties. <br>2.In Feature Class Properties, navigate to the General tab.Under Alias, remove all aliases, and click OK.Republish the map service <br><a href=\"https://support.esri.com/en/technical-article/000015142\" target=\"_blank\"><u>Read more</u></a>", "In ArcCatalog, right-click the desired feature class in the database connection > Properties.2.In Feature Class Properties, navigate to the General tab.Under Alias, remove all aliases, and click OK.Republish the map service <br><a href=\"https://support.esri.com/en/technical-article/000015142\" target=\"_blank\"><u>Read more</u></a>"]
+			},
+
+			{
+				"tag": "Unable to cerate default database database",
+				"patterns": ["Error: Unable to create or open the default database", "Getting an error unable to create or open the default database"],
+				"responses": ["1.Ensure access to the default geodatabase is not prohibited by software such as firewalls or virtual private network (VPN) configurations. Esri recommends the default geodatabase be created on the local machine. To change the path to the new default geodatabase on the local machine, refer to How To: Set the default Home folder and geodatabase location for new map documents for more information.<br>2.In Windows Explorer, right-click the drive for the new default geodatabase, and select Properties.<br>3.Select the General tab, and ensure adequate space is available on the drive. The default file geodatabase requires no more than 0.5 MB.<br>4.In Windows Explorer, browse to the directory for the new default geodatabase.Right-click the folder, and select Properties<br>5.Select the Security tab, and ensure the user attempting to execute the software has Read and Write permissions.<br>6.If one or more Default.gdb folders exist in the workspace described in Step 4, delete them.<br>7.Rename the Default.gdb file to, rexample, Default_old.gdb. A new Default.gdb file is created when ArcMap loads.<br>8.Install the MSXML 4.0 Service Pack 3(Microsoft XML Core Services).<br>9.Run a software repair on ArcGIS Desktop.Refer to Repair or remove programs in Windows 10 for steps to do this.<br>10.Restart the machine, and launch ArcMap.The application starts successfully <br><a href=\"https://support.esri.com/en/technical-article/000011147\" target=\"_blank\"><u>Read more</u></a>", "1.Ensure access to the default geodatabase is not prohibited by software such as firewalls or virtual private network (VPN) configurations. Esri recommends the default geodatabase be created on the local machine. To change the path to the new default geodatabase on the local machine, refer to How To: Set the default Home folder and geodatabase location for new map documents for more information.<br>2.In Windows Explorer, right-click the drive for the new default geodatabase, and select Properties.<br>3.Select the General tab, and ensure adequate space is available on the drive. The default file geodatabase requires no more than 0.5 MB.<br>4.In Windows Explorer, browse to the directory for the new default geodatabase.Right-click the folder, and select Properties<br>5.Select the Security tab, and ensure the user attempting to execute the software has Read and Write permissions.<br>6.If one or more Default.gdb folders exist in the workspace described in Step 4, delete them.<br>7.Rename the Default.gdb file to, rexample, Default_old.gdb. A new Default.gdb file is created when ArcMap loads.<br>8.Install the MSXML 4.0 Service Pack 3(Microsoft XML Core Services).<br>9.Run a software repair on ArcGIS Desktop.Refer to Repair or remove programs in Windows 10 for steps to do this.<br>10.Restart the machine, and launch ArcMap.The application starts successfully <br><a href=\"https://support.esri.com/en/technical-article/000011147\" target=\"_blank\"><u>Read more</u></a>"]
+			},
+			{
+				"tag": "Register with geodatabase fails with Error 000622 and Error 001050",
+				"patterns": ["Register with geodatabase fails with Error 000622 and Error 001050", "Unable to register a geodatabase"],
+				"responses": ["Bug BUG-0001072191. 1.Disable background geoprocessing before dragging and dropping the view into the Register with Geodatabase geoprocessing tool.<br>2.Browse to the view in the graphical user interface (GUI).<br>3. Right-click the feature class > click Manage > click Register with Geodatabase. This opens the tool with all fields already populated <br><a href=\"https://support.esri.com/en/technical-article/000011147\" target=\"_blank\"><u>Read more</u></a>", "Bug BUG-0001072191. 1.Disable background geoprocessing before dragging and dropping the view into the Register with Geodatabase geoprocessing tool.<br>2.Browse to the view in the graphical user interface (GUI).<br>3. Right-click the feature class > click Manage > click Register with Geodatabase. This opens the tool with all fields already populated <br><a href=\"https://support.esri.com/en/technical-article/000011147\" target=\"_blank\"><u>Click here</u></a>"]
+			},
+
+			{
+				"tag": "Upgrading an SDE schema geodatabase to 10.6 or later SDE fails -37 error",
+				"patterns": ["Upgrading an SDE schema geodatabase to 10.6 or later as the SDE user fails with a -37 error", "Encountering an error -37 while upgrading a geodatabase"],
+				"responses": ["Bug <a href=\"https://support.esri.com/en/download/7784\" target=\"_blank\"><u>BUG-000126821</u></a> The ArcGIS (Desktop, Engine, Server) 10.8 SQL Server Enterprise Geodatabase Upgrade Patch is live on the support site. Add another user to the db_owner role and use that user to upgrade the geodatabase instead. Refer to the ArcMap: Privileges for Geodatabases in SQL Server. <a href=\"https://support.esri.com/en/bugs/nimbus/QlVHLTAwMDEyNjgyMQ==\" target=\"_blank\"><u> Click here to know more</u></a> "]
+			},
+
+
+			{
+				"tag": "Failed to connect database Network I/O Error",
+				"patterns": ["Error: Failed to connect to database. Network I/O Error", "Unable to connect database"],
+				"responses": ["1.Open Windows Explorer and navigate to the %SDEHOME% folder. Right-click on this 'SQLEXE' folder and select 'Properties'.2.Under the 'Security' tab select 'Add'. Type the name of the Windows user/group receiving permissions within this folder. On the bottom half of the sqlexe properties window, there is a series of check boxes for the amount of permissions the administrator wishes to grant to this user/group.Below illustrates where to 'Add' users/groups and the permissions needed.3.Now, Windows users should be able to use the correct connection parameters to successfully establish a connection to the database. <br><a href=\"https://support.esri.com/en/technical-article/000008064\" target=\"_blank\"><u>Read more</u></a>", "1.Open Windows Explorer and navigate to the %SDEHOME% folder. Right-click on this 'SQLEXE' folder and select 'Properties'.2.Under the 'Security' tab select 'Add'. Type the name of the Windows user/group receiving permissions within this folder. On the bottom half of the sqlexe properties window, there is a series of check boxes for the amount of permissions the administrator wishes to grant to this user/group.Below illustrates where to 'Add' users/groups and the permissions needed.3.Now, Windows users should be able to use the correct connection parameters to successfully establish a connection to the database. <br><a href=\"https://support.esri.com/en/technical-article/000008064\" target=\"_blank\"><u>Read more</u></a>"]
+			},
+
+
+			{
+				"tag": "How to change the length of an existing field",
+				"patterns": ["Error: This field will only store strings with upto 20 characters(s)", "How to change the length of an existing field"],
+				"responses": ["We cannot increase the character length of an already existing text field. However,  a new text field with a length of 255 characters can be created and set the new field to mirror the properties of the original field.", "We cannot increase the character length of an already existing text field. However,  a new text field with a length of 255 characters can be created and set the new field to mirror the properties of the original field."]
+			},
+
+			{
+				"tag": "Intermittent issues with connecting to SQL Server",
+				"patterns": ["Intermittent issues with connecting to SQL Server SDE geodatabase from ArcMap", "Unable to connect to geodatabase from ArcMap"],
+				"responses": ["1.Go to SQL Server Managemnet studio.<br>2.Refresh SQL Server instance.<br>3. Go to ArcMap>Database connection>Make a new database connection>Disconnect old connection.", "1.Go to SQL Server Managemnet studio.<br> 2.Refresh SQL Server instance.<br> 3. Go to ArcMap>Database connection>Make a new database connection>Disconnect old connection."]
+			},
+
+			{
+				"tag": "Error 002118 Operation not supported on a table",
+				"patterns": ["Error 002118","Error 002118: Operation not supported on a table that has archiving enabled", "Getting warning 002118"],
+				"responses": ["Certain datasets that have archiving enabled cannot be registered or unregistered as versioned without first disabling archiving. The correct order of operations must be followed.First, disable archiving on the dataset. Then, complete the unregister or register as versioned operation. Note that the archiving history will be lost when you disable archiving. <br><a href=\"https://pro.arcgis.com/en/pro-app/latest/tool-reference/tool-errors-and-warnings/001001-010000/tool-errors-and-warnings-02101-02125-002118.htm\" target=\"_blank\"><u>Read more</u></a>", "Certain datasets that have archiving enabled cannot be registered or unregistered as versioned without first disabling archiving. The correct order of operations must be followed.First, disable archiving on the dataset. Then, complete the unregister or register as versioned operation. Note that the archiving history will be lost when you disable archiving. <br><a href=\"https://pro.arcgis.com/en/pro-app/latest/tool-reference/tool-errors-and-warnings/001001-010000/tool-errors-and-warnings-02101-02125-002118.htm\" target=\"_blank\"><u>Read more</u></a>"]
+			},
+			{
+				"tag": "with the option to register existing data only",
+				"patterns": ["Issue with edits from one of the feature class participating in the replica not bring the changes over to the child geodatabase even after successful synchronization", "Unable to edits from one of the feature class participating in the replica"],
+				"responses": ["1.Delete the problematic feature dataset and the related tables from the child (published) geodatabase. <br>2.Reconcile, post and compress both the child and parent geodatabase during the afterhours Unregister the replica from both the geodatabases <br>3.Copy and paste the feature dataset from the production (Parent) geodatabase. It will bring the related tables as well.<br>4.finally recreate the replica with the option to register existing data only.", "1.Delete the problematic feature dataset and the related tables from the child (published) geodatabase. <br>2.Reconcile, post and compress both the child and parent geodatabase during the afterhours Unregister the replica from both the geodatabases <br>3.Copy and paste the feature dataset from the production (Parent) geodatabase. It will bring the related tables as well.<br>4.finally recreate the replica with the option to register existing data only."]
+			},
+			{
+				"tag": "enable/disable admin access for the ArcGIS Server web adaptor",
+				"patterns": ["Issue: How to enable/disable admin access for the ArcGIS Server web adaptor without reconfiguring the web adaptor", "Steps to enable/disable admin access for the ArcGIS Server web adaptor without reconfiguring the web adaptor"],
+				"responses": ["1.Sign into the admin endpoint of ArcGIS Server.<br>2. Navigate to system > web adaptor.<br>3.Select the link that corresponds to the web adaptor you wish to change (it may take some guess work as they are labeled with a hash code rather than the name)<br>4. In the URL box of the browser, add /update<br>5. You can then check/uncheck the box for Administrative access", "1.Sign into the admin endpoint of ArcGIS Server.<br>2. Navigate to system > web adaptor.<br>3.Select the link that corresponds to the web adaptor you wish to change (it may take some guess work as they are labeled with a hash code rather than the name)<br>4. In the URL box of the browser, add /update<br>5. You can then check/uncheck the box for Administrative access"]
+			},
+
+			{
+				"tag": "Failed to create the specific relationship class",
+				"patterns": ["Error 001400","Encountering Error 001400: Failed to create the specific relationship class. Must be the owner to perform this operation while creating Relationship class from ArcGIS Pro", "Unable to create a relationship class"],
+				"responses": ["To create a relationship class, both the origin and destination tables/feature classes must be owned by the same user <br><a href=\"https://support.esri.com/en/technical-article/000011213\" target=\"_blank\"><u>Read more</u></a>", "To create a relationship class, both the origin and destination tables/feature classes must be owned by the same user <br><a href=\"https://support.esri.com/en/technical-article/000011213\" target=\"_blank\"><u>Read more</u></a>"]
+			},
+
+			{
+				"tag": "Input feature class is not registered as versioned",
+				"patterns": ["ERROR 130051","ERROR 130051: Input feature class is not registered as versioned is returned when attempting to execute Calculate Geometry for area on layers with relationship class ", "Unable gto calculate geometry on layers with relationship class"],
+				"responses": ["BUG-000137298 : The error message, ERROR 130051: Input feature class is not registered as versioned is returned when attempting to execute Calculate Geometry for area on layers with relationships.", "BUG-000137298 : The error message ERROR 130051: Input feature class is not registered as versioned. is returned when attempting to execute Calculate Geometry for area on layers with relationships."]
+			},
+			{
+				"tag": "Update Enterprise Geodatabase License",
+				"patterns": ["Error: Failed to connect to database. No ArcGIS Server license found. Contact your geodatabase administrator to update license", "Unable to upgrade an enterprise geodatabase license"],
+				"responses": ["1.Open a new session in ArcGIS Pro and connect to the Geodatabase you want to upgrade the license from Catalog pane.<br>2.Search for the tool Update Enterprise Geodatabase License (Data Management) from Geoprocessing tools.<br>3.-Provide the input as the database connection (.sde) for which we want to update the license. <br>4.For Authorization file put in the new keycodes file that was generated with the new ECP number from My ESRI portal. <br>5.-Run the tool. This should update the license for the current Enterprise Geodatabase.<br>6.-Open a new session of Pro and check if the license is updated.<br>7.Additionally check in the SDE_server_config repository table for the new ECP Number <br><a href=\"https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/update-enterprise-geodatabase-license.htm\" target=\"_blank\"><u>Read more</u></a>", "1.Open a new session in ArcGIS Pro and connect to the Geodatabase you want to upgrade the license from Catalog pane.<br>2.Search for the tool Update Enterprise Geodatabase License (Data Management) from Geoprocessing tools.<br>3.-Provide the input as the database connection (.sde) for which we want to update the license. <br>4.For Authorization file put in the new keycodes file that was generated with the new ECP number from My ESRI portal. <br>5.-Run the tool. This should update the license for the current Enterprise Geodatabase.<br>6.-Open a new session of Pro and check if the license is updated.<br>7.Additionally check in the SDE_server_config repository table for the new ECP Number <br><a href=\"https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/update-enterprise-geodatabase-license.htm\" target=\"_blank\"><u>Read more</u></a>"]
+			},
+
+			{
+				"tag": "Enterprise Geodatabase Slow Performance",
+				"patterns": ["Geodatabase slow performance", "How to maintain geodatabase performance"],
+				"responses": ["General Steps to resolve performance Issue of an enterprise geodatabase. 1. Disconnect all the user's connections from the geodatabase and stopped the ArcGIS Server services.<br2. Run Diagnose version table and Diagnose version Metadata table and genarate a log from both the tools. If any errors encounters in the logs, run Repair metadata version table and Repair version table. <br3. If the issue stills persists, go to the backend(DBMS) and check if there are any orphan locks are present in the lock tables, if yes clear those locks.<br4. Run Compress geodatabase tool <br>5. Rebuild Index and  Analyze datasets tools", "General Steps to resolve performance Issue of an enterprise geodatabase. 1. Disconnect all the user's connections from the geodatabase and stopped the ArcGIS Server services.<br2. Run Diagnose version table and Diagnose version Metadata table and genarate a log from both the tools. If any errors encounters in the logs, run Repair metadata version table and Repair version table. <br3. If the issue stills persists, go to the backend(DBMS) and check if there are any orphan locks are present in the lock tables, if yes clear those locks.<br4. Run Compress geodatabase tool <br>5. Rebuild Index and  Analyze datasets tools"]
+			},
+
+			{
+				"tag": "Compress geodatabase",
+				"patterns": ["Problem: Unable to compress a geodatabase in ArcGIS for Server", "Unable to compress a geodatabase in ArcGIS for Server"],
+				"responses": ["Use the Rebuild Indexes tool to resolve this issue. The Rebuild Indexes tool re-creates the indexes and updates the database statistics for the tables in the .db. To locate the Rebuild Indexes tool, navigate to ArcCatalog > Toolboxes > SystemToolboxes > Data Management Tools > Geodatabase Administration > Rebuild Indexes. <br><a href=\"https://support.esri.com/en/technical-article/000014135\" target=\"_blank\"><u>Visit here</u></a>", "Use the Rebuild Indexes tool to resolve this issue. The Rebuild Indexes tool re-creates the indexes and updates the database statistics for the tables in the .db. To locate the Rebuild Indexes tool, navigate to ArcCatalog > Toolboxes > SystemToolboxes > Data Management Tools > Geodatabase Administration > Rebuild Indexes. <br><a href=\"https://support.esri.com/en/technical-article/000014135\" target=\"_blank\"><u>Visit here</u></a>"]
+			},
+			{
+				"tag": "Failed to Compress the database - ERROR 999999",
+				"patterns": ["Failed to Compress the database - ERROR 999999", "Encountering an error 999999 while compressing a database"],
+				"responses": ["The error refered to an orphaned locks present in the locks tables of the geodatabase. Check all the locks tables from the backend respectively and clear them one by one. <br><a href=\"https://community.esri.com/t5/geodatabase-questions/failed-to-compress-the-database-error-999999/td-p/1034470\" target=\"_blank\"><u>Read more</u></a>", "The error refered to an orphaned locks present in the locks tables of the geodatabase. Check all the locks tables from the backend respectively and clear them one by one. <br><a href=\"https://community.esri.com/t5/geodatabase-questions/failed-to-compress-the-database-error-999999/td-p/1034470\" target=\"_blank\"><u>Read more</u></a>"]
+			},
+
+			{
+				"tag": "Connection Property set was missing",
+				"patterns": ["Error: The connection property set was missing a required property or the property value was unrecognized", "Unable to create a datastore"],
+				"responses": ["Depending on the cause, choose one of the workarounds below to resolve.The ArcGIS Server Windows service does not have read permissions. Install the Microsoft ODBC driver on the client machine 1.Log in to My Esri.<br>2.Navigate to My Organizations > Downloads > Products. Search for ArcGIS Enterprise (Windows), select the version from the Version drop-down list, and click View Downloads.<br>3.In the Download Components pane, expand Database Support Files, and search for the appropriate Microsoft ODBC driver. Click Download.<br>4.Run the Microsoft ODBC driver installer to install the driver.<br>5.The SDE file can now be used to create a data store. <br><a href=\"https://support.esri.com/en/technical-article/000024020\" target=\"_blank\"><u>Read more</u></a>", "Depending on the cause, choose one of the workarounds below to resolve.The ArcGIS Server Windows service does not have read permissions. Install the Microsoft ODBC driver on the client machine 1.Log in to My Esri.<br>2.Navigate to My Organizations > Downloads > Products. Search for ArcGIS Enterprise (Windows), select the version from the Version drop-down list, and click View Downloads.<br>3.In the Download Components pane, expand Database Support Files, and search for the appropriate Microsoft ODBC driver. Click Download.<br>4.Run the Microsoft ODBC driver installer to install the driver.<br>5.The SDE file can now be used to create a data store. <br><a href=\"https://support.esri.com/en/technical-article/000024020\" target=\"_blank\"><u>Read more</u></a>"]
+			},
+
+			{
+				"tag": "Unable to download a managed map area in Collector for ArcGIS",
+				"patterns": ["When attempting to download a managed map area in Collector for ArcGIS, the download fails due to an error that occurs between ArcGIS Server and the ArcGIS Web Adaptor replica access.", "Unable to download a managed map area in Collector for ArcGIS"],
+				"responses": ["Add the layers associated with the map to Portal for ArcGIS through the :6443/arcgis/rest URL instead of the Web Adaptor URL.<br><a href=\"https://support.esri.com/en/bugs/nimbus/QlVHLTAwMDEyNDg2Nw==\" target=\"_blank\"><u>Read more</u></a>", "Add the layers associated with the map to Portal for ArcGIS through the :6443/arcgis/rest URL instead of the Web Adaptor URL.<br><a href=\"https://support.esri.com/en/bugs/nimbus/QlVHLTAwMDEyNDg2Nw==\" target=\"_blank\"><u>Read more</u></a>"]
+			},
+
+			{
+				"tag": "Could not create geodatabase tables and stored procedures",
+				"patterns": ["Error: Could not create geodatabase tables and stored procedures. Failed to execute (EnableEnterpriseGeodatabase)", "Unable to create an enterprise geodatabase"],
+				"responses": ["To run the Enable Enterprise Geodatabase tool successfully, identify the SQL Server versions used on the machine, and uninstall the unnecessary ODBC drivers.Identify the SQL Server version used on the machine. Refer to Microsoft Support: How to determine which version and edition of SQL Server Database Engine is running for guidance.Navigate to Start > Control Panel > Programs > Programs and Features, and uninstall the non-essential server drivers.<br><a href=\"https://support.esri.com/en/technical-article/000017218\" target=\"_blank\"><u>Read more</u></a>", "To run the Enable Enterprise Geodatabase tool successfully, identify the SQL Server versions used on the machine, and uninstall the unnecessary ODBC drivers.Identify the SQL Server version used on the machine. Refer to Microsoft Support: How to determine which version and edition of SQL Server Database Engine is running for guidance.Navigate to Start > Control Panel > Programs > Programs and Features, and uninstall the non-essential server drivers.<br><a href=\"https://support.esri.com/en/technical-article/000017218\" target=\"_blank\"><u>Read more</u></a>"]
+			},
+
+			{
+				"tag": "000117: Warning empty output generated",
+				"patterns": ["000117: Warning empty output generated.", "Empty output generated"],
+				"responses": ["If this warning is unexpected, check the Extent environment to ensure that it is appropriate for the data being used and run Check Geometry and repair any issues reported.", "If this warning is unexpected, check the Extent environment to ensure that it is appropriate for the data being used and run Check Geometry and repair any issues reported."]
+			},
+
+			{
+				"tag": "without the option to move edits to the base table.",
+				"patterns": ["Bug: Versioned tables with the option 'move edits to base' will compress objects to the base table which have not been saved in the DEFAULT version", "Versioned tables have not been saved in the DEFAULT version after compress"],
+				"responses": ["Unregister the class as versioned and register the class as versioned without the option to move edits to the base table.<br><a href=\"https://support.esri.com/en/technical-article/000010726\" target=\"_blank\"><u>Read more</u></a>", "Unregister the class as versioned and register the class as versioned without the option to move edits to the base table.<br> <a href=\"https://support.esri.com/en/technical-article/000010726\" target=\"_blank\"><u>Read more</u></a>"]
+			},
+			{
+				"tag": "capture traffic being sent to ArcGIS Server through the Web Adaptor",
+				"patterns": ["How to capture traffic being sent to ArcGIS Server through the Web Adaptor", "Steps to capture traffic being sent to ArcGIS Server through the Web Adaptor"],
+				"responses": ["1. Open IIS Manager  expand the IIS Instance, and select Application Pools.<br>2. R-click ArcGISWebAdaptorAppPool v4.0  Advanced Settings<br>3. Select Identity (under Process Model). Click the ellipses next to the username ApplicationPoolIdentity <br>4. In the Application Pool Identity dialog, choose Custom Account and click Set. <br>5. Enter your username (that you're signed into the machine as), in the format domain user, and enter the domain user password twice. <br>6. Open Fiddler, and submit a request to ArcGIS Server through REST using the Web Adaptor (from a different machine).  Fiddler will capture the request being submitted to ArcGIS Server", "1. Open IIS Manager  expand the IIS Instance, and select Application Pools.<br>2. R-click ArcGISWebAdaptorAppPool v4.0  Advanced Settings<br>3. Select Identity (under Process Model). Click the ellipses next to the username ApplicationPoolIdentity <br>4. In the Application Pool Identity dialog, choose Custom Account and click Set. <br>5. Enter your username (that you're signed into the machine as), in the format domain user, and enter the domain user password twice. <br>6. Open Fiddler, and submit a request to ArcGIS Server through REST using the Web Adaptor (from a different machine).  Fiddler will capture the request being submitted to ArcGIS Server"]
+			},
+			{
+				"tag": "log4shell",
+				"patterns": ["What is log4shell","How does log4shell affect ArcGIS Enterprise"],
+				"responses": ["Esri is actively investigating the impact of the Log4j library vulnerability (CVE-2021-44228) disclosed on December 9, 2021, as some Esri products contain this common logging tool. This bulletin contains the latest information about Esri products and will be updated as new information becomes available. Log4Shell is imapcting 10.7.1 and below.<br>Please refer <a href=\"https://www.esri.com/arcgis-blog/products/arcgis-enterprise/administration/arcgis-software-and-cve-2021-44228-aka-log4shell-aka-logjam/\" target=\"_blank\"><u>this</u></a>","Esri is actively investigating the impact of the Log4j library vulnerability (CVE-2021-44228) disclosed on December 9, 2021, as some Esri products contain this common logging tool. This bulletin contains the latest information about Esri products and will be updated as new information becomes available. Log4Shell is imapcting 10.7.1 and below.<br>Please refer <a href=\"https://www.esri.com/arcgis-blog/products/arcgis-enterprise/administration/arcgis-software-and-cve-2021-44228-aka-log4shell-aka-logjam/\" target=\"_blank\"><u>this</u></a>"]
+			},
+			{
+				"tag": "log4shell solution",
+				"patterns": ["What is log4shell solution","How does log4shell can be resolved","log4shell solution"],
+				"responses": ["ESRI has come out with scripts that will remove the parts of log4j that is exploitable. This can be done without needing to upgrade our versions. The instructions for Portal, ArcGIS Server and Data Store are located <a href=\"https://www.esri.com/arcgis-blog/products/arcgis-enterprise/administration/arcgis-software-and-cve-2021-44228-aka-log4shell-aka-logjam/\" target=\"_blank\"><u>here</u></a>"]
+			},
+{
+"tag": "FEATURE_OUTSIDE_SPATIALREF",
+"patterns": ["HRESULT:0x80041003 The feature falls outside the defined spatial reference", "HRESULT:0x80041003 The feature falls outside the defined spatial reference"],
+"responses": ["The answer to your question is here on the ESRI page, <br><a href=\"https://pro.arcgis.com/en/pro-app/latest/tool-reference/tool-errors-and-warnings/160001-170000/tool-errors-and-warnings-160101-160125-160115.htm\" target=\"_blank\"><u>Visit this page</u></a>","The answer to your question is here on the ESRI page, <br><a href=\"https://pro.arcgis.com/en/pro-app/latest/tool-reference/tool-errors-and-warnings/160001-170000/tool-errors-and-warnings-160101-160125-160115.htm\" target=\"_blank\"><u>Visit this page</u></a>"]
+}
+    	
+
+
+
+]}
+
+
